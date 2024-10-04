@@ -1,0 +1,41 @@
+/* Base styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+/* Block: Button */
+.button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Element: Button Icon */
+.button__icon {
+    margin-right: 5px;
+}
+
+/* Modifier: Primary Button */
+.button--primary {
+    background-color: #28a745; /* Green */
+}
+
+/* Modifier: Disabled Button */
+.button--disabled {
+    background-color: #ccc; /* Grey */
+    cursor: not-allowed;
+}
+
+/* Hover effect for normal button */
+.button:not(.button--disabled):hover {
+    background-color: #0056b3; /* Darker blue */
+}
